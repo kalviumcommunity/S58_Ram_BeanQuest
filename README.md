@@ -1,4 +1,4 @@
-# BrewVista - Your Passport to Coffee Exploration!
+# BeanQuest - Your Passport to Coffee Exploration!
 
 Welcome to BrewVista, where we believe every cup of coffee tells a story. Our online coffee seller platform is dedicated to curating an unparalleled coffee experience for enthusiasts and connoisseurs alike. Step into a world where coffee isn't just a beverage; it's a journey of discovery, flavor, and connection.
 
