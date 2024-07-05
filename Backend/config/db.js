@@ -1,6 +1,8 @@
+require('dotenv').config();
+
 const mongoose = require('mongoose');
 
-const uri = 'mongodb+srv://ramnathawat:wb17PMkKpwz12Qh5@capstone.uqelmqs.mongodb.net/?retryWrites=true&w=majority&appName=Capstone'; // Your MongoDB URI
+const uri = process.env.MONGODB_URI;
 
 mongoose.connect(uri, {
   useNewUrlParser: true,
