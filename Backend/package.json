@@ -1,0 +1,24 @@
+{
+  "name": "s58_ram_beanquest",
+  "version": "1.0.0",
+  "description": "Welcome to BrewVista, where we believe every cup of coffee tells a story. Our online coffee seller platform is dedicated to curating an unparalleled coffee experience for enthusiasts and connoisseurs alike. Step into a world where coffee isn't just a beverage; it's a journey of discovery, flavor, and connection.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.4",
+    "nodemon": "^3.1.4"
+  }
+}
