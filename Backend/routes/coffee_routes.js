@@ -1,9 +1,6 @@
-// coffee_routes.js
-
 const express = require('express');
 const router = express.Router();
-const mongoose = require('mongoose');  // Import mongoose
-const Coffee = require('../models/coffee_model'); 
+const Coffee = require('../models/coffee_model'); // Adjust path as per your project structure
 
 // GET route to fetch all coffee entries
 router.get('/coffees', async (req, res) => {
@@ -17,15 +14,17 @@ router.get('/coffees', async (req, res) => {
 
 // POST route to add a new coffee entry
 router.post('/coffees', async (req, res) => {
-  const { name, origin, description, price, brewingMethods } = req.body;
+  const { name, description, flavorNotes, roastProfile, specialCharacteristics, pricing, imageUrl } = req.body;
 
   try {
     const newCoffee = new Coffee({
       name,
-      origin,
       description,
-      price,
-      brewingMethods
+      flavorNotes,
+      roastProfile,
+      specialCharacteristics,
+      pricing,
+      imageUrl
     });
 
     await newCoffee.save();
@@ -38,7 +37,7 @@ router.post('/coffees', async (req, res) => {
 // PUT route to update an existing coffee entry
 router.put('/coffees/:id', async (req, res) => {
   const { id } = req.params;
-  const { name, origin, description, price, brewingMethods } = req.body;
+  const { name, description, flavorNotes, roastProfile, specialCharacteristics, pricing, imageUrl } = req.body;
 
   if (!mongoose.Types.ObjectId.isValid(id)) {
     return res.status(400).json({ message: 'Invalid ID format' });
@@ -47,7 +46,7 @@ router.put('/coffees/:id', async (req, res) => {
   try {
     const updatedCoffee = await Coffee.findByIdAndUpdate(
       id,
-      { name, origin, description, price, brewingMethods },
+      { name, description, flavorNotes, roastProfile, specialCharacteristics, pricing, imageUrl },
       { new: true, runValidators: true }
     );
 

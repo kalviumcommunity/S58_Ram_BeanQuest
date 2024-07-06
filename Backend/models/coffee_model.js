@@ -1,11 +1,19 @@
 const mongoose = require('mongoose');
 
-const CoffeeSchema = new mongoose.Schema({
+const coffeeSchema = new mongoose.Schema({
+  _id: { type: String, required: true }, 
   name: { type: String, required: true },
-  origin: { type: String, required: true },
   description: { type: String, required: true },
-  price: { type: Number, required: true },
-  brewingMethods: [{ type: String }]
+  flavorNotes: { type: String, required: true },
+  roastProfile: { type: String, required: true },
+  specialCharacteristics: { type: String, required: true },
+  pricing: {
+    original: { type: Number, required: true }, 
+    currency: { type: String, required: true } 
+  },
+  imageUrl: { type: String, required: true }
 });
 
-module.exports = mongoose.model('Coffee', CoffeeSchema);
+const Coffee = mongoose.model('Coffee', coffeeSchema);
+
+module.exports = Coffee;
