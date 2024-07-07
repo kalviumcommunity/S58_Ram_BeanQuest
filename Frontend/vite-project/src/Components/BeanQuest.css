@@ -37,27 +37,28 @@ html, body {
 
 /* Column for form */
 .formColumn {
-  flex: 3; /* 30% width */
+  flex:30%; /* 30% width */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 40px;
-  background-color: #252525; /* Dark background color */
+  background-color: #242424; /* Dark background color */
   color: #fff; /* Light text color */
   margin-left: 150px;
 }
 
 /* Title styling */
 .title {
-  font-size: 48px;
-  font-family: 'Clicker Script', cursive; /* Example font family */
+  font-size: 66px;
+  font-family: 'Clicker Script', cursive;
   margin-bottom: 20px;
+  white-space: nowrap; 
 }
 
 /* Subtitle styling */
 .subtitle {
-  font-size: 24px;
+  font-size: 25px;
   font-family: 'Inter', sans-serif; /* Example font family */
   margin-bottom: 40px;
   text-align: center;
@@ -68,13 +69,15 @@ html, body {
 .passwordWrapper,
 .confirmPasswordWrapper {
   background-color: #504748; /* Dark gray background */
-  border: .5px solid #504848; /* White border */
+  border: 0.5px solid #504848; /* White border */
   border-radius: 10px; /* Rounded corners */
   margin-bottom: 20px;
   padding: 10px 20px; /* Padding inside the elements */
   width: 100%;
   font-size: 18px; /* Font size */
+  box-sizing: border-box; /* Include padding and border in element size */
 }
+
 
 #password{
   width: 229.8px;
@@ -88,10 +91,13 @@ html, body {
   border: 0px;
 }
 /* Styling for password icons */
-.passwordIcon,
-.confirmPasswordIcon {
-  margin-left: 10px; /* Adjust icon positioning */
+.passwordIcon, .confirmPasswordIcon {
+  margin-left: 10px;
+  padding-top: 2px;
+  width: 20px;
+  height: 20px;
 }
+
 
 /* Footer of the form */
 .formFooter {

@@ -62,10 +62,8 @@ html, body {
   width: 100%;
 }
 
-.passwordIcon,
-.confirmPasswordIcon {
-  margin-left: 10px;
-}
+
+
 
 .formFooter {
   display: flex;
@@ -104,3 +102,9 @@ html, body {
   white-space: nowrap;
   border: 0;
 }
+
+.checkbox{
+  padding-left: 10px;
+  border: .5px solid #504848; 
+}
+

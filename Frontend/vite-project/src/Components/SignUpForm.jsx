@@ -18,7 +18,7 @@ function SignUpForm() {
           className="inputField"
           placeholder="Password"
         />
-        <img src="eye-icon.png" alt="Show password" className="passwordIcon" />
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-eye-410-367828.png?f=webp&w=256" alt="Show password" className="passwordIcon" />
       </div>
       <div className="confirmPasswordWrapper">
         <label className="confirmPasswordLabel visually-hidden" htmlFor="confirmPassword">Confirm Password</label>
@@ -28,7 +28,7 @@ function SignUpForm() {
           className="inputField"
           placeholder="Confirm Password"
         />
-        <img src="eye-icon.png" alt="Show password" className="confirmPasswordIcon" />
+        <img src="https://cdn.iconscout.com/icon/free/png-256/free-eye-410-367828.png?f=webp&w=256" alt="Show password" className="confirmPasswordIcon" />
       </div>
       <div className="formFooter">
         <div className="formOptions">
