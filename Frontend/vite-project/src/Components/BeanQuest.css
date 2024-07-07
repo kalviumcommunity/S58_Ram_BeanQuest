@@ -1,0 +1,138 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure full height and hide overflow */
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Main container for layout */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Column for image */
+.imageColumn {
+  flex: 7; /* 70% width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure image does not overflow */
+}
+
+/* Styling for hero image */
+.heroImage {
+  margin-left: -2%;
+  width: 98%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the container */
+}
+
+/* Column for form */
+.formColumn {
+  flex:30%; /* 30% width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #242424; /* Dark background color */
+  color: #fff; /* Light text color */
+  margin-left: 150px;
+}
+
+/* Title styling */
+.title {
+  font-size: 66px;
+  font-family: 'Clicker Script', cursive;
+  margin-bottom: 20px;
+  white-space: nowrap; 
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 25px;
+  font-family: 'Inter', sans-serif; /* Example font family */
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Styling for input fields and wrappers */
+.inputField,
+.passwordWrapper,
+.confirmPasswordWrapper {
+  background-color: #504748; /* Dark gray background */
+  border: 0.5px solid #504848; /* White border */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px;
+  padding: 10px 20px; /* Padding inside the elements */
+  width: 100%;
+  font-size: 18px; /* Font size */
+  box-sizing: border-box; /* Include padding and border in element size */
+}
+
+
+#password{
+  width: 229.8px;
+  height: 42px;
+}
+
+
+
+.passwordWrapper,.confirmPasswordWrapper{
+  background-color: #242424;
+  border: 0px;
+}
+/* Styling for password icons */
+.passwordIcon, .confirmPasswordIcon {
+  margin-left: 10px;
+  padding-top: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Footer of the form */
+.formFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Styling for sign-up button */
+.signUpButton {
+  background-color: #eceaea; /* Light background */
+  color: #525050; /* Dark text color */
+  border-radius: 29px;
+  padding: 10px 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Additional styling for login prompt or other text */
+.loginPrompt {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* Visually hidden label */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
