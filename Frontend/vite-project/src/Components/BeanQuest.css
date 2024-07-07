@@ -1,0 +1,350 @@
+.container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .darkBackground {
+    background-color: #252525;
+    width: 100%;
+  }
+  
+  @media (max-width: 991px) {
+    .darkBackground {
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .darkBackground {
+      display: none;
+    }
+  }
+  
+  .contentWrapper {
+    display: flex;
+    gap: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .contentWrapper {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+    }
+  }
+  
+  .imageColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .imageColumn {
+      width: 100%;
+    }
+  }
+  
+  .heroImage {
+    aspect-ratio: 0.78;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    flex-grow: 1;
+    margin-top: 23px;
+  }
+  
+  @media (max-width: 991px) {
+    .heroImage {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .heroImage {
+      display: none;
+    }
+  }
+  
+  .formColumn {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 50%;
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 991px) {
+    .formColumn {
+      width: 100%;
+    }
+  }
+  
+  .formWrapper {
+    display: flex;
+    margin-top: 124px;
+    flex-direction: column;
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 991px) {
+    .formWrapper {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .headerContent {
+    z-index: 10;
+    display: flex;
+    margin-left: 40px;
+    width: 671px;
+    max-width: 100%;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 640px) {
+    .headerContent {
+      display: none;
+    }
+  }
+  
+  .title {
+    align-self: end;
+    font: 96px Clicker Script, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .title {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+  
+  .subtitle {
+    margin: 40px 30px 0 0;
+    font: 45px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .subtitle {
+      max-width: 100%;
+      margin-right: 10px;
+      font-size: 40px;
+    }
+  }
+  
+  .emailLabel {
+    margin-top: 44px;
+    font: 24px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .emailLabel {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .inputField {
+    mix-blend-mode: color-dodge;
+    box-shadow: 0 4px 4.9px 0 rgba(185, 185, 185, 0.25);
+    background-color: #504848;
+    margin-top: -8px;
+    align-items: start;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 33px 40px;
+    font: 36px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .inputField {
+      max-width: 100%;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  
+  .passwordWrapper {
+    mix-blend-mode: color-dodge;
+    box-shadow: 0 4px 4.9px 0 rgba(185, 185, 185, 0.25);
+    background-color: #504848;
+    display: flex;
+    margin-top: 27px;
+    gap: 20px;
+    font-size: 36px;
+    white-space: nowrap;
+    padding: 36px 65px;
+  }
+  
+  @media (max-width: 991px) {
+    .passwordWrapper {
+      max-width: 100%;
+      flex-wrap: wrap;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  
+  .passwordLabel {
+    font-family: Inter, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+  
+  .passwordIcon {
+    aspect-ratio: 1.49;
+    object-fit: auto;
+    object-position: center;
+    width: 43px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    align-self: start;
+  }
+  
+  .confirmPasswordWrapper {
+    mix-blend-mode: color-dodge;
+    box-shadow: 0 4px 4.9px 0 rgba(185, 185, 185, 0.25);
+    background-color: #504848;
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+    font-size: 36px;
+    padding: 36px 65px;
+  }
+  
+  @media (max-width: 991px) {
+    .confirmPasswordWrapper {
+      max-width: 100%;
+      flex-wrap: wrap;
+      padding: 0 20px;
+    }
+  }
+  
+  .confirmPasswordLabel {
+    font-family: Inter, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+  
+  .confirmPasswordIcon {
+    aspect-ratio: 1.49;
+    object-fit: auto;
+    object-position: center;
+    width: 43px;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .formFooter {
+    display: flex;
+    margin-top: 24px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px 0 30px;
+  }
+  
+  @media (max-width: 991px) {
+    .formFooter {
+      max-width: 100%;
+      padding-left: 20px;
+    }
+  }
+  
+  .formOptions {
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 991px) {
+    .formOptions {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .rememberMeWrapper {
+    align-self: start;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .rememberMeIcon {
+    aspect-ratio: 1.15;
+    object-fit: auto;
+    object-position: center;
+    width: 15px;
+  }
+  
+  .rememberMeLabel {
+    font-family: Inter, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+  
+  .forgotPassword {
+    font-family: Inter, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+  
+  .signUpButton {
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 29px;
+    background-color: #eceaea;
+    margin-top: 34px;
+    color: #525050;
+    justify-content: center;
+    padding: 13px 56px;
+    font: 600 48px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .signUpButton {
+      font-size: 40px;
+      max-width: 100%;
+      padding: 0 20px 0 29px;
+    }
+  }
+  
+  .loginPrompt {
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 59px;
+    font: 32px Inter, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .loginPrompt {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  
+  .boldText {
+    font-weight: 700;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+h1{
+  margin-left: 110vh;
+  margin-top: -80vh;
+}
+

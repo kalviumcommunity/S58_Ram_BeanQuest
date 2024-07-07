@@ -1,0 +1,115 @@
+/* SignUpForm.css */
+
+
+/* Container styling */
+img{
+    width: 40vw;
+    height: 697px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 100px;
+    padding: 100px;
+    border-color: yellow;
+    border: 50px;
+  }
+  
+  /* Form wrapper */
+  .form-wrapper {
+    display: flex;
+    gap: 40px;
+  }
+  
+  /* Image styling */
+  .hero-image {
+    max-width: 50%;
+    height: auto;
+  }
+  
+  /* Form styling */
+  .signup-form {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  
+  .input {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .password-input {
+    position: relative;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .form-options {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox {
+    margin-right: 10px;
+  }
+  
+  .checkbox-label {
+    font-size: 1rem;
+  }
+  
+  .forgot-password {
+    font-size: 1rem;
+    color: #000; /* Adjust color as needed */
+    text-decoration: none;
+  }
+  
+  .signup-button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #ccc; /* Adjust background color */
+    color: #000; /* Adjust text color */
+    cursor: pointer;
+  }
+  
+  .login-prompt {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .login-link {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
