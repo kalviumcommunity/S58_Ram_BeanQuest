@@ -3,6 +3,7 @@ import React from "react";
 function SignUpForm() {
   return (
     <div>
+      <div className="input">
       <label className="emailLabel visually-hidden" htmlFor="email">Email address</label>
       <input
         type="email"
@@ -39,6 +40,7 @@ function SignUpForm() {
           <a href="/" className="forgotPassword">Forgot password?</a>
         </div>
         <button className="signUpButton">Sign Up</button>
+      </div>
       </div>
     </div>
   );
