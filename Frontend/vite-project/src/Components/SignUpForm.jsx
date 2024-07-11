@@ -4,7 +4,7 @@ function SignUpForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [passwordsMatch, setPasswordsMatch] = useState(true); // State to track if passwords match
+  const [passwordsMatch, setPasswordsMatch] = useState(true); 
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
@@ -27,6 +27,22 @@ function SignUpForm() {
 
   const toggleConfirmPasswordVisibility = () => {
     setShowConfirmPassword(!showConfirmPassword);
+  };
+
+  // Handle password change and reset error state if passwords match
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+    if (e.target.value === confirmPassword) {
+      setPasswordsMatch(true);
+    }
+  };
+
+  // Handle confirm password change and reset error state if passwords match
+  const handleConfirmPasswordChange = (e) => {
+    setConfirmPassword(e.target.value);
+    if (e.target.value === password) {
+      setPasswordsMatch(true);
+    }
   };
 
   return (
@@ -57,7 +73,7 @@ function SignUpForm() {
               className="inputField"
               placeholder="Password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={handlePasswordChange}
             />
             <img
               src="https://cdn.iconscout.com/icon/free/png-256/free-eye-410-367828.png?f=webp&w=256"
@@ -79,7 +95,7 @@ function SignUpForm() {
               className="inputField"
               placeholder="Confirm Password"
               value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
+              onChange={handleConfirmPasswordChange}
             />
             <img
               src="https://cdn.iconscout.com/icon/free/png-256/free-eye-410-367828.png?f=webp&w=256"
