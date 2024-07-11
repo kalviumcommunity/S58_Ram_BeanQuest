@@ -85,3 +85,8 @@ Here's a roadmap for your BrewVista project, divided into two submissions per we
 - **User Authentication and Authorization:** JWT
 - **Payment Gateway Integration:** Cashmere, Razorpay
 - **Real-time Communication (Optional):** WebSockets, server-sent events for live chat, notifications
+
+
+## Deployed link:- 
+- **Frontend:** https://668933c1abe78a4a2db44cfb--cute-twilight-b37f1d.netlify.app/
+- **Backend:** https://s58-ram-beanquest.onrender.com
