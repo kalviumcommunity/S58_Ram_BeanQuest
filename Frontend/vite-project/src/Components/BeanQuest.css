@@ -30,14 +30,16 @@ html, body {
 /* Styling for hero image */
 .heroImage {
   margin-left: -2%;
-  width: 98%;
+  width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure image covers the container */
+  transform: translate(7px);
+
 }
 
 /* Column for form */
 .formColumn {
-  flex:30%; /* 30% width */
+  flex: 3; /* 30% width */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +47,7 @@ html, body {
   padding: 40px;
   background-color: #242424; /* Dark background color */
   color: #fff; /* Light text color */
-  margin-left: 150px;
+  margin-left: 75px;
 }
 
 /* Title styling */
@@ -70,34 +72,43 @@ html, body {
 .confirmPasswordWrapper {
   background-color: #504748; /* Dark gray background */
   border: 0.5px solid #504848; /* White border */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 5px; /* Rounded corners */
   margin-bottom: 20px;
   padding: 10px 20px; /* Padding inside the elements */
-  width: 100%;
+  width: 600px;
   font-size: 18px; /* Font size */
+  height: 83px; /* Consistent height for input fields */
   box-sizing: border-box; /* Include padding and border in element size */
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center items vertically */
 }
 
-
-#password{
-  width: 229.8px;
-  height: 42px;
+/* Adjusted wrapper styling to have matching background and no border */
+.passwordWrapper, .confirmPasswordWrapper {
+  background-color: #504748; /* Same background as input */
+  border: 0.5px solid #504848; /* Same border as input */
 }
 
-
-
-.passwordWrapper,.confirmPasswordWrapper{
-  background-color: #242424;
-  border: 0px;
+/* Styling for input fields inside wrappers */
+.inputField input,
+.passwordWrapper input,
+.confirmPasswordWrapper input {
+  background: transparent; /* Transparent background to inherit wrapper styles */
+  border: none; /* Remove default border */
+  width: 100%; /* Full width of the wrapper */
+  height: 100%; /* Full height of the wrapper */
+  color: #fff; /* Text color */
+  font-size: 18px; /* Font size */
+  outline: none; /* Remove outline */
 }
+
 /* Styling for password icons */
 .passwordIcon, .confirmPasswordIcon {
   margin-left: 10px;
-  padding-top: 2px;
   width: 20px;
   height: 20px;
+  cursor: pointer; /* Pointer cursor for clickable icons */
 }
-
 
 /* Footer of the form */
 .formFooter {
@@ -135,4 +146,7 @@ html, body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+.passwordWrapper,.confirmPasswordWrapper{
+  padding-top: 30px;
 }
