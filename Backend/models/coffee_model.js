@@ -17,4 +17,3 @@ const coffeeSchema = new mongoose.Schema({
 const Coffee = mongoose.model('Coffee', coffeeSchema);
 
 module.exports = Coffee;
-//hello
