@@ -10,15 +10,15 @@ function SignUpForm() {
 
   const handleSignUp = (event) => {
     event.preventDefault();
-    
+
     // Validate passwords
     if (password !== confirmPassword) {
       setPasswordsMatch(false);
-      return; // Prevent form submission if passwords don't match
+      return; 
+    } else {
+      setPasswordsMatch(true);
+      console.log("Signing up...");
     }
-
-    // Proceed with sign up logic here
-    console.log("Signing up...");
   };
 
   const togglePasswordVisibility = () => {
@@ -61,10 +61,7 @@ function SignUpForm() {
             onChange={(e) => setEmail(e.target.value)}
           />
           <div className="passwordWrapper">
-            <label
-              className="passwordLabel visually-hidden"
-              htmlFor="password"
-            >
+            <label className="passwordLabel visually-hidden" htmlFor="password">
               Password
             </label>
             <input
@@ -83,10 +80,7 @@ function SignUpForm() {
             />
           </div>
           <div className="confirmPasswordWrapper">
-            <label
-              className="confirmPasswordLabel visually-hidden"
-              htmlFor="confirmPassword"
-            >
+            <label className="confirmPasswordLabel visually-hidden" htmlFor="confirmPassword">
               Confirm Password
             </label>
             <input
