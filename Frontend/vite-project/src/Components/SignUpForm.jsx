@@ -14,10 +14,9 @@ function SignUpForm() {
     // Validate passwords
     if (password !== confirmPassword) {
       setPasswordsMatch(false);
-      return; // Prevent form submission if passwords don't match
+      return; 
     } else {
       setPasswordsMatch(true);
-      // Proceed with sign up logic here (e.g., API call, form submission)
       console.log("Signing up...");
     }
   };
